@@ -18,6 +18,34 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+  <script defer src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+<!--  <script defer src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>-->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyC45gA-26Wp8UlirFOgTKKqzuH_E8UiAn4",
+      authDomain: "chat-app-flutter-89b57.firebaseapp.com",
+      databaseURL: "https://chat-app-flutter-89b57.firebaseio.com",
+      projectId: "chat-app-flutter-89b57",
+      storageBucket: "chat-app-flutter-89b57.appspot.com",
+      messagingSenderId: "730738785312",
+      appId: "1:730738785312:web:f8ef2ebae717c1d81ad045",
+      measurementId: "G-FVQQQR731R"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
